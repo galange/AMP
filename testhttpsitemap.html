@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fairy Tail</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <style>
+body {
+    font-family: cursive;
+    background: transparent;
+    word-break: break-word;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.listover ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: normal;
+}
+.listover ul li {
+	border: 1px solid #ccc;
+    padding: 5px;
+    margin: 7px 5px;
+}
+.listover ul li a {
+	color: #444;
+    text-decoration: none;
+}
+.listover li a:hover {
+	color: #E91E63;
+}
+  </style>
+  <script>
+function showrecentposts(b){document.write("<ul>");for(var a=0;a<b.feed.entry.length;a++){for(var c=0;c<b.feed.entry[a].link.length&&"alternate"!=b.feed.entry[a].link[c].rel;c++);document.write("<li><a href="+("'"+b.feed.entry[a].link[c].href+"'")+'" target="_blank">'+b.feed.entry[a].title.$t+"</a> </li>")}document.write("</ul>")};
+  </script>
+</head>
+<body>
+<div class='listover'>
+<ul>
+<script src="http://susanosasukeblog.blogspot.com/feeds/posts/default/-/Fairy%20Tail?alt=json-in-script&amp;callback=showrecentposts&amp;max-results=150&start-index=1"></script>
+<script src="http://susanosasukeblog.blogspot.com/feeds/posts/default/-/Fairy%20Tail?alt=json-in-script&amp;callback=showrecentposts&amp;max-results=150&start-index=151"></script>
+<script src="http://susanosasukeblog.blogspot.com/feeds/posts/default/-/Fairy%20Tail?alt=json-in-script&amp;callback=showrecentposts&amp;max-results=150&start-index=301"></script>
+<script src="http://susanosasukeblog.blogspot.com/feeds/posts/default/-/Fairy%20Tail?alt=json-in-script&amp;callback=showrecentposts&amp;max-results=150&start-index=451"></script>
+</ul>
+</div>
+</body>
+</html>
