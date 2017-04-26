@@ -7,46 +7,34 @@
 <script src=''></script>
 <style>
 body {
-    color: #222;
-    font-size: 14px;
     font-family: 'Roboto', sans-serif;
-    line-height: 22px;
-    padding: 0;
-	margin: 0;
-    word-wrap: break-word;
     background: transparent;
-}
-.listover {
+    word-break: break-word;
+    width: 100%;
     margin: 0;
     padding: 0;
-    background: transparent;
-    display: block;
-    overflow: hidden;
 }
 .listover ul {
     list-style: none;
-    line-height: normal;
     margin: 0;
     padding: 0;
+    font-size: 14px;
+    line-height: normal;
 }
 .listover ul li {
-	margin: 5px 0;
+	border: 1px solid #ccc;
     padding: 5px;
-    border: 1px solid #ccc;
-    font-weight: bold;
-	background: #efefef;
+    margin: 7px 5px;
 }
 .listover ul li a {
-	text-decoration: none;
-    color: #444;
+	color: #444;
+    text-decoration: none;
 }
-.listover ul li a:hover {
+.listover li a:hover {
 	color: #E91E63;
 }
 </style>
-  <script>
-function showrecentposts(b){document.write("<ul>");for(var a=0;a<b.feed.entry.length;a++){for(var c=0;c<b.feed.entry[a].link.length&&"alternate"!=b.feed.entry[a].link[c].rel;c++);document.write("<li><a href="+("'"+b.feed.entry[a].link[c].href+"'")+'" target="_blank">'+b.feed.entry[a].title.$t+"</a> </li>")}document.write("</ul>")};
-  </script>
+<script type="text/javascript" src="https://rawgit.com/galange/AMP/master/stmap.js"></script>
 </head>
 <body>
 <div class='listover'>
